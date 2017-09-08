@@ -1,7 +1,7 @@
 # FreeCodeCamp advanced algorithm scripting project - no repeats please - Javascript solution
 link: https://www.freecodecamp.org/challenges/no-repeats-please
 
-
+```
 function permAlone(str) {
 
   var regExp = /(\w)\1+/g;
@@ -37,3 +37,4 @@ function permAlone(str) {
 }
 
 permAlone('aab');
+```
