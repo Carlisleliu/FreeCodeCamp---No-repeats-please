@@ -1,12 +1,13 @@
 # FreeCodeCamp advanced algorithm scripting project - no repeats please - Javascript solution
 link: https://www.freecodecamp.org/challenges/no-repeats-please
 
-
+```
 function permAlone(str) {
-  
+
   var regExp = /(\w)\1+/g;
   
   function getAllPermutations (text) {
+  
     var result = [];
     
     if (text.length === 1) {
@@ -26,6 +27,7 @@ function permAlone(str) {
     return result;
   }
   
+  
   var allPermutations = getAllPermutations(str);
   var result = allPermutations.filter(function(item) {
     return !item.match(regExp);
@@ -35,3 +37,4 @@ function permAlone(str) {
 }
 
 permAlone('aab');
+```
